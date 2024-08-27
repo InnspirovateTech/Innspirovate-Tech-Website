@@ -14,7 +14,9 @@
     
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #2D3436, #57606F);
+      background: linear-gradient(135deg, #FF7E5F, #feb47b, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
       color: #F4F4F4;
       display: flex;
       justify-content: center;
@@ -22,18 +24,30 @@
       height: 100vh;
     }
 
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     .coming-soon {
       text-align: center;
-      padding: 20px;
-      background-color: rgba(45, 52, 54, 0.8);
+      padding: 60px;
+      background-color: rgba(0, 0, 0, 0.6);
       border-radius: 10px;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-      max-width: 600px;
+      max-width: 800px;
       width: 100%;
     }
 
     .coming-soon h1 {
-      font-size: 4rem;
+      font-size: 6rem;
       margin-bottom: 20px;
       color: #F4F4F4;
       font-weight: 700;
@@ -44,7 +58,7 @@
       font-size: 2rem;
       margin-bottom: 40px;
       font-weight: 400;
-      color: #B2BEC3;
+      color: #F4F4F4;
     }
 
     .coming-soon p {
@@ -67,14 +81,14 @@
       width: 200px;
       font-size: 1rem;
       background-color: #F4F4F4;
-      color: #2D3436;
+      color: #ff6b6b;
     }
 
     .phone-input button {
       padding: 12px 24px;
       border-radius: 0 5px 5px 0;
       border: none;
-      background-color: #0984E3;
+      background-color: #feb47b;
       color: #F4F4F4;
       font-size: 1rem;
       cursor: pointer;
@@ -83,7 +97,7 @@
 
     .phone-input button:hover {
       background-color: #F4F4F4;
-      color: #0984E3;
+      color: #feb47b;
     }
 
     @media (max-width: 480px) {
@@ -92,7 +106,7 @@
       }
 
       .coming-soon h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
 
       .coming-soon h2 {
@@ -111,9 +125,9 @@
 </head>
 <body>
   <div class="coming-soon">
-    <h1>Innspirovate Tech</h1>
-    <h2>Inspire. Innovate. Iterate.</h2>
-    <p>We're working hard to bring something amazing. Stay tuned!</p>
+    <h1>Coming Soon</h1>
+    <h2>Innspirovate Tech</h2>
+    <p>Inspire. Innovate. Iterate.</p>
   </div>
 </body>
 </html>
